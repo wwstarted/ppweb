@@ -32,6 +32,7 @@
 }
 
 .header-new.scrolled {
+  opacity: 0.9;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(var(--blur-amount));
   -webkit-backdrop-filter: blur(var(--blur-amount));

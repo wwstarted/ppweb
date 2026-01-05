@@ -293,21 +293,6 @@
   animation: floatAnimation 6s ease-in-out infinite;
 }
 
-@media (min-width: 640px) {
-  .pp-bubble {
-    width: 5rem;
-    height: 5rem;
-    font-size: 0.875rem;
-  }
-}
-@media (min-width: 1024px) {
-  .pp-bubble {
-    width: 6rem;
-    height: 6rem;
-    font-size: 1rem;
-  }
-}
-
 /* Positioning Bubbles */
 .bubble-1 {
   top: 20%;
@@ -324,21 +309,6 @@
 .bubble-4 {
   top: 25%;
   left: 12%;
-}
-
-@media (min-width: 1024px) {
-  .bubble-1 {
-    right: 15%;
-  }
-  .bubble-2 {
-    right: 8%;
-  }
-  .bubble-3 {
-    left: 12%;
-  }
-  .bubble-4 {
-    left: 18%;
-  }
 }
 
 /* Animations Keyframes */
@@ -372,6 +342,299 @@
 .pp-visible {
   opacity: 1 !important;
   transform: translateY(0) !important;
+}
+
+/* Small Mobile (< 390px) */
+@media (max-width: 389px) {
+  .pp-title {
+    font-size: 2rem;
+  }
+
+  .pp-description {
+    font-size: 0.9375rem;
+  }
+}
+
+/* Mobile (< 640px) */
+@media (max-width: 639px) {
+  .pp-hero-section {
+    min-height: auto;
+    padding-bottom: 0;
+  }
+
+  .pp-container {
+    padding: 2rem 1rem 5rem 1rem;
+  }
+
+  .pp-content-wrapper {
+    padding-left: 0;
+  }
+
+  .pp-subtitle {
+    font-size: 1rem;
+  }
+
+  .pp-title {
+    font-size: 2.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .pp-description {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .pp-actions {
+    padding-top: 1.25rem;
+  }
+
+  .pp-btn-primary {
+    padding: 1.5rem 1.25rem;
+    font-size: 0.875rem;
+  }
+
+  .pp-bottom-divider {
+    height: 180px;
+  }
+
+  .pp-floating-wrapper {
+    margin-top: -3rem;
+  }
+
+  .pp-bubble {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 0.6875rem;
+  }
+}
+
+/* Tablet (640px - 767px) */
+@media (min-width: 640px) and (max-width: 767px) {
+  .pp-container {
+    padding: 3rem 1.5rem 6rem 1.5rem;
+  }
+
+  .pp-content-wrapper {
+    padding-left: 1rem;
+  }
+
+  .pp-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .pp-title {
+    font-size: 3rem;
+  }
+
+  .pp-description {
+    font-size: 1.0625rem;
+  }
+
+  .pp-bottom-divider {
+    height: 280px;
+  }
+
+  .pp-floating-wrapper {
+    margin-top: -6rem;
+  }
+
+  .pp-bubble {
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 0.8125rem;
+  }
+}
+
+/* Tablet Portrait (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .pp-hero-section {
+    min-height: 85vh;
+    padding-top: 5.5rem;
+  }
+
+  .pp-container {
+    padding: 3.5rem 1.5rem 7rem 1.5rem;
+  }
+
+  .pp-content-wrapper {
+    padding-left: 2rem;
+  }
+
+  .pp-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .pp-title {
+    font-size: 3.5rem;
+  }
+
+  .pp-description {
+    font-size: 1.125rem;
+  }
+
+  .pp-actions {
+    gap: 1.25rem;
+  }
+
+  .pp-btn-primary {
+    padding: 1.5rem 1.75rem;
+    font-size: 1rem;
+  }
+
+  .pp-bottom-divider {
+    height: 350px;
+  }
+
+  .pp-floating-wrapper {
+    margin-top: -10rem;
+  }
+
+  .pp-bubble {
+    width: 5rem;
+    height: 5rem;
+    font-size: 0.875rem;
+  }
+
+  .bubble-1 {
+    right: 12%;
+  }
+  .bubble-2 {
+    right: 6%;
+  }
+  .bubble-3 {
+    left: 10%;
+  }
+  .bubble-4 {
+    left: 15%;
+  }
+}
+
+/* Desktop (1024px - 1279px) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .pp-hero-section {
+    min-height: 75vh;
+    padding-top: 6rem;
+  }
+
+  .pp-container {
+    padding: 4rem 2rem 8rem 2rem;
+  }
+
+  .pp-content-wrapper {
+    padding-left: 2.5rem;
+  }
+
+  .pp-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .pp-title {
+    font-size: 4rem;
+  }
+
+  .pp-description {
+    font-size: 1.125rem;
+  }
+
+  .pp-actions {
+    gap: 1.5rem;
+  }
+
+  .pp-btn-primary {
+    padding: 1.5rem 2rem;
+    font-size: 1rem;
+  }
+
+  .pp-bottom-divider {
+    height: 400px;
+  }
+
+  .pp-floating-wrapper {
+    margin-top: -14rem;
+  }
+
+  .pp-bubble {
+    width: 5.5rem;
+    height: 5.5rem;
+    font-size: 0.9375rem;
+  }
+
+  .bubble-1 {
+    right: 14%;
+  }
+  .bubble-2 {
+    right: 7%;
+  }
+  .bubble-3 {
+    left: 11%;
+  }
+  .bubble-4 {
+    left: 16%;
+  }
+}
+
+/* Large Desktop (≥ 1280px) */
+@media (min-width: 1280px) {
+  .pp-hero-section {
+    min-height: 75vh;
+    padding-top: 6rem;
+  }
+
+  .pp-container {
+    padding: 0rem 2rem 9rem 2rem;
+  }
+
+  .pp-content-wrapper {
+    padding-left: 40px;
+  }
+
+  .pp-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .pp-title {
+    font-size: 6rem;
+  }
+
+  .pp-description {
+    font-size: 1.25rem;
+  }
+
+  .pp-actions {
+    gap: 1.5rem;
+  }
+
+  .pp-btn-primary {
+    padding: 1.5rem 2rem;
+    font-size: 1rem;
+  }
+
+  .pp-bottom-divider {
+    height: 450px;
+  }
+
+  .pp-floating-wrapper {
+    margin-top: -16rem;
+  }
+
+  .pp-bubble {
+    width: 6rem;
+    height: 6rem;
+    font-size: 1rem;
+  }
+
+  .bubble-1 {
+    right: 15%;
+  }
+  .bubble-2 {
+    right: 8%;
+  }
+  .bubble-3 {
+    left: 12%;
+  }
+  .bubble-4 {
+    left: 18%;
+  }
 }
 
 /* ===================================
@@ -606,7 +869,8 @@
   }
 
   .pp-services-grid {
-    gap: 3rem;
+    padding: 0 0;
+    gap: 2rem;
   }
 
   .pp-service-image-wrapper {
@@ -1263,10 +1527,13 @@
 /* ===================================
    USER REVIEW - STYLES
    =================================== */
+/* ===================================
+   USER REVIEW - STYLES (RESPONSIVE FIXED)
+   =================================== */
 .pp-reviews-section {
   position: relative;
   background-color: #ffffff;
-  padding: 0 96px 80px 96px;
+  padding: 0 1rem 3rem 1rem;
   overflow: hidden;
 }
 
@@ -1300,7 +1567,7 @@
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0;
   position: relative;
   z-index: 10;
 }
@@ -1309,8 +1576,8 @@
 .pp-reviews-header {
   text-align: center;
   max-width: 56rem;
-  margin: 0 auto 4rem auto;
-  padding-top: 4rem;
+  margin: 0 auto 3rem auto;
+  padding-top: 3rem;
 }
 
 .pp-reviews-subtitle {
@@ -1344,7 +1611,7 @@
   position: relative;
   height: 600px;
   overflow: hidden;
-  margin: 0 -1rem;
+  margin: 0;
 }
 
 .pp-reviews-fade-top,
@@ -1370,20 +1637,8 @@
 .pp-reviews-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 2rem;
+  gap: 1rem;
   height: 100%;
-}
-
-@media (min-width: 768px) {
-  .pp-reviews-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .pp-reviews-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 /* Columns & Animation */
@@ -1524,16 +1779,107 @@
   }
 }
 
+/* ===================================
+   RESPONSIVE BREAKPOINTS
+   =================================== */
+
+/* Mobile (< 768px) */
 @media (max-width: 767px) {
+  .pp-reviews-section {
+    padding: 0 1rem 3rem 1rem;
+  }
+
+  .pp-reviews-header {
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .pp-reviews-heading {
+    font-size: 2rem;
+  }
+
+  .pp-reviews-grid-wrapper {
+    height: 500px;
+  }
+
+  .pp-reviews-grid {
+    gap: 1rem;
+  }
+
   .pp-reviews-column:nth-child(2),
   .pp-reviews-column:nth-child(3) {
     display: none;
   }
 }
 
+/* Tablet (768px - 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
+  .pp-reviews-section {
+    padding: 0 2rem 4rem 2rem;
+  }
+
+  .pp-reviews-header {
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .pp-reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
   .pp-reviews-column:nth-child(3) {
     display: none;
+  }
+}
+
+/* Desktop (1024px - 1279px) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .pp-reviews-section {
+    padding: 0 3rem 5rem 3rem;
+  }
+
+  .pp-reviews-container {
+    padding: 0 1rem;
+  }
+
+  .pp-reviews-header {
+    padding-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .pp-reviews-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .pp-reviews-grid-wrapper {
+    margin: 0 -0.5rem;
+  }
+}
+
+/* Large Desktop (≥ 1280px) */
+@media (min-width: 1280px) {
+  .pp-reviews-section {
+    padding: 0 6rem 5rem 6rem;
+  }
+
+  .pp-reviews-container {
+    padding: 0 2rem;
+  }
+
+  .pp-reviews-header {
+    padding-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .pp-reviews-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .pp-reviews-grid-wrapper {
+    margin: 0 -1rem;
   }
 }
 
@@ -1672,7 +2018,7 @@
 
 @media (min-width: 1024px) {
   .pp-process-progress-line {
-    display: block;
+    display: hide;
   }
 }
 
@@ -3379,6 +3725,7 @@
   }
 
   .blog-grid {
+    padding: 0 0;
     gap: 1.5rem;
     margin-bottom: 2.5rem;
   }
@@ -3395,6 +3742,10 @@
 
 /* ===================================
    FAQ SECTION - CSS
+   =================================== */
+
+/* ===================================
+   FAQ SECTION - CSS (TABLET FIXED)
    =================================== */
 
 /* Section Container */
@@ -3486,6 +3837,7 @@
 }
 
 .faq-image img {
+  border-radius: 20px;
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -3745,52 +4097,6 @@
   }
 }
 
-/* Tablet (768px+) */
-@media (min-width: 768px) {
-  .faq-section {
-    padding: 0;
-  }
-
-  .faq-container {
-    padding: 0 1.5rem;
-  }
-
-  .faq-title {
-    font-size: 3rem;
-  }
-}
-
-/* Desktop (1024px+) */
-@media (min-width: 1024px) {
-  .faq-grid {
-    grid-template-columns: 1fr 2fr;
-    gap: 3rem;
-  }
-
-  .faq-image-wrapper {
-    margin-left: calc((100vw - 1340px) / -2 - 2rem);
-  }
-
-  .faq-content {
-    padding: 0;
-  }
-
-  .faq-title {
-    font-size: 4rem;
-  }
-
-  .faq-description {
-    font-size: 1.25rem;
-  }
-}
-
-/* Large Desktop (1340px+) */
-@media (min-width: 1340px) {
-  .faq-image-wrapper {
-    margin-left: calc((100vw - 1340px) / -2);
-  }
-}
-
 /* Mobile adjustments */
 @media (max-width: 767px) {
   .faq-section {
@@ -3825,5 +4131,116 @@
 
   .faq-answer-content {
     font-size: 0.875rem;
+  }
+}
+
+/* ===================================
+   TABLET RESPONSIVE (768px - 1279px)
+   Bao gồm: iPad Air, iPad Pro (1024x1366)
+   =================================== */
+@media (min-width: 768px) and (max-width: 1279px) {
+  .faq-section {
+    padding: 4rem 0;
+  }
+
+  .faq-container {
+    padding: 0 2rem;
+  }
+
+  /* Grid 2 columns với tỷ lệ 1:1.5 */
+  .faq-grid {
+    grid-template-columns: 1fr 1.5fr;
+    gap: 2.5rem;
+    align-items: start;
+  }
+
+  /* Image wrapper - căn giữa theo chiều cao content */
+  .faq-image-wrapper {
+    max-width: 100%;
+    align-self: center;
+  }
+
+  .faq-image img {
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Content */
+  .faq-content {
+    padding: 0;
+  }
+
+  .faq-title {
+    font-size: 2.75rem;
+  }
+
+  .faq-description {
+    font-size: 1.125rem;
+  }
+
+  /* Tabs - thu gọn hơn */
+  .tab-btn {
+    margin-right: 2rem;
+    font-size: 0.8125rem;
+  }
+
+  .tab-icon {
+    height: 1.75rem;
+  }
+
+  .tab-btn .tab-icon svg {
+    width: 1.625rem;
+    height: 1.625rem;
+  }
+
+  /* FAQ items */
+  .faq-question span {
+    font-size: 1rem;
+    padding-right: 2rem;
+  }
+
+  .faq-answer-content {
+    font-size: 0.9375rem;
+  }
+}
+
+/* ===================================
+   DESKTOP (1280px+)
+   =================================== */
+@media (min-width: 1280px) {
+  .faq-section {
+    padding: 0;
+  }
+
+  .faq-container {
+    padding: 0 1.5rem;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+  }
+
+  .faq-image-wrapper {
+    margin-left: calc((100vw - 1340px) / -2 - 2rem);
+  }
+
+  .faq-content {
+    padding: 0;
+  }
+
+  .faq-title {
+    font-size: 4rem;
+  }
+
+  .faq-description {
+    font-size: 1.25rem;
+  }
+}
+
+/* Large Desktop (1340px+) */
+@media (min-width: 1340px) {
+  .faq-image-wrapper {
+    margin-left: calc((100vw - 1340px) / -2);
   }
 }
